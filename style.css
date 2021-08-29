@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+
+  --clr-primary: #f2994a;
+  --clr-secondary: #4e5150;
+  --clr-text: #333;
+  --clr-bg: #f2f2f2;
+  --clr-placeholder: #828282;
+  --clr-footer: #bdbdbd;
+  --clr-label: #4f4f4f;
+  --clr-plusless-btn: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 1.2rem;
+  color: var(--clr-text);
+  font-family: var(--ff-primary);
+  text-transform: capitalize;
+}
+
+header {
+  margin: 1rem 0;
+}
+
+header h2 {
+  color: var(--clr-secondary);
+  font-size: 2.4em;
+  font-weight: 600;
+}
+
+.cart-items {
+  padding: 2rem;
+  background-color: var(--clr-bg);
+  border-radius: 20px;
+  color: var(--clr-secondary);
+}
+
+.items {
+  margin-bottom: 6rem;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.item img {
+  width: 12em;
+  border-radius: 20px;
+}
+
+.txt-item {
+  padding: 0 2em;
+}
+
+.txt-item h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.txt-item .price {
+  font-weight: 600;
+}
+
+.--old__price {
+  text-decoration: line-through;
+}
+
+.--new__price {
+  margin-right: 1em;
+  color: var(--clr-primary);
+  font-size: 1.5em;
+}
+
+.price-ctn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 1px solid;
+  font-size: 1.2em;
+}
+
+.price-ctn h4 {
+  font-weight: 500;
+}
+
+.informations {
+  margin: 2rem 0;
+}
+
+.informations h3 {
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+.contact-info,
+.shipping-address {
+  margin: 2rem 0;
+}
+
+label {
+  display: block;
+  color: var(--clr-label);
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  height: 3rem;
+  border-radius: 14px;
+  border-color: var(--clr-placeholder);
+}
+
+.input {
+  padding: 1rem 0;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.save-box {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.save-info {
+  display: inline;
+}
+
+button {
+  display: grid;
+  margin-left: auto;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--clr-primary);
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4em;
+  color: var(--clr-footer);
+  text-transform: none;
+}
+
+footer a {
+  color: var(--clr-footer);
+}

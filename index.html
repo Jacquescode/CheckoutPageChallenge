@@ -14,5 +14,91 @@
 
   <script src="app.js"></script>
 </body>
-
+<header>
+  <h2>Checkout</h2>
+</header>
+  <section class="cart-items">
+    <div class="items">
+      <div class="item">
+        <img src="Images/photo1.png" alt="photo 1">
+        <div class="txt-item">
+          <h4>vintage backbag</h4>
+          <span class="price --new__price">54.99</span>
+          <span class="price --old__price">94.99</span>  
+        </div>
+      </div>
+      <div class="item">
+        <img src="Images/photo2.png" alt="photo 2">
+        <div class="txt-item">
+          <h4>levi shoes</h4>
+        <span class="price --new__price">74.99</span>
+        <span class="price --old__price">124.99</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-prices">
+      <div class="price-ctn">
+        <h4>shipping</h4>
+        <span>$19</span>
+      </div>
+      <div class="price-ctn">
+        <h4>total</h4>
+        <span>$148.98</span>
+      </div>
+    </div>
+  </section> 
+  <section class="informations">
+    <form>
+      <div class="contact-info">
+        <h3>contact information</h3>
+        <div class="input">
+          <label for="email-adress">e-mail</label>
+          <input type="email" required id="email-adress" />
+        </div> 
+        <div class="input">
+          <label for="phone">phone</label>
+          <input type="phone" required id="phone" />
+        </div> 
+      </div>
+      <div class="shipping-address">
+        <h3>shipping address</h3>
+        <div class="input">
+          <label for="name">full name</label>
+          <input type="text" required id="name" />
+      </div> 
+        <div class="input">
+          <label for="address">address</label>
+          <input type="address" required id="address" />
+      </div> 
+        <div class="input">
+          <label for="city">city</label>
+          <input type="city" required id="city" />
+      </div>
+      <div class="inputs">
+          <div class="input">
+            <label for="country">country</label>
+            <select name="country" id="country">
+              <option value="canada">canada</option>
+              <option value="usa">USA</option>
+              <option value="mexico">Mexico</option>
+              <option value="japon">Japon</option>
+            </select>
+          </div> 
+          <div class="input">
+            <label for="postal code">postal code</label>
+            <input type="postal code" required id="postal code" />
+            <br>
+          </div>
+        </div> 
+        <input class="save-box" type="checkbox" id="save-check">
+        <label class="save-info" for="save-check">save this information for next time</label>
+    </div>
+    <button type="submit">continue</button>
+  </form>
+  </section>
+  <footer>
+    <p>
+      created by <a href="">JacquesCode</a> - devchallenges.io
+    </p>
+  </footer>
 </html>
