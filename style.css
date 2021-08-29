@@ -163,3 +163,35 @@ footer {
 footer a {
   color: var(--clr-footer);
 }
+
+@media (min-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "informations informations cart cart"
+      "footer footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .informations {
+    grid-area: informations;
+    margin: 2rem;
+  }
+
+  .cart-items {
+    grid-area: cart;
+    margin: 2rem;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
