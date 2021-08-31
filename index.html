@@ -26,6 +26,11 @@
               <h4>vintage backbag</h4>
               <span class="price --new__price">54.99</span>
               <span class="price --old__price">94.99</span>
+              <div class="amount-ctn">
+                <button class="remove">-</button>
+                <span class="amount">1</span>
+                <button class="add">+</button>
+              </div>
             </div>
           </div>
           <div class="item">
@@ -34,6 +39,11 @@
               <h4>levi shoes</h4>
               <span class="price --new__price">74.99</span>
               <span class="price --old__price">124.99</span>
+              <div class="amount-ctn">
+                <button class="remove">-</button>
+                <span class="amount">1</span>
+                <button class="add">+</button>
+              </div>
             </div>
           </div>
         </div>
@@ -54,41 +64,56 @@
             <h3>contact information</h3>
             <div class="input">
               <label for="email-adress">e-mail</label>
-              <input type="email" required id="email-adress" />
+              <input type="email" required id="email-adress" placeholder="Enter your email..."/>
+
+              <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="phone">phone</label>
-              <input type="phone" required id="phone" />
+              <input type="phone" required id="phone" placeholder="Enter your phone number..."/>
+
+              <div class="input__indicator"></div>
             </div>
           </div>
           <div class="shipping-address">
             <h3>shipping address</h3>
             <div class="input">
               <label for="name">full name</label>
-              <input type="text" required id="name" />
+              <input type="text" required id="name" placeholder="Enter your Name..." />
+
+              <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="address">address</label>
-              <input type="address" required id="address" />
+              <input type="address" required id="address" placeholder="Your Address..." />
+
+              <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="city">city</label>
-              <input type="city" required id="city" />
+              <input type="city" required id="city" placeholder="Your City..."/>
+
+              <div class="input__indicator"></div>
             </div>
             <div class="inputs">
               <div class="input">
                 <label for="country">country</label>
                 <select name="country" id="country">
+                  <option value="" disabled selected>Your Country...</option>
                   <option value="canada">canada</option>
                   <option value="usa">USA</option>
                   <option value="mexico">Mexico</option>
                   <option value="japon">Japon</option>
                 </select>
+
+                <div class="input__indicator"></div>
               </div>
               <div class="input">
                 <label for="postal code">postal code</label>
-                <input type="postal code" required id="postal code" />
+                <input type="postal code" required id="postal code" placeholder="Your Postal Code..."/>
                 <br />
+
+                <div class="input__indicator"></div>
               </div>
             </div>
             <input class="save-box" type="checkbox" id="save-check" />
