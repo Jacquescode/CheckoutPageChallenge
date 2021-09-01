@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Checkout Page Challenge</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -36,7 +36,7 @@
 
 ## Overview
 
-<img src="Images/screencapture-jacquescode-github-io-CheckoutPageChallenge-2021-09-01-00_08_20">
+<img src="Images/screencapture-jacquescode-github-io-CheckoutPageChallenge-2021-09-01-00_08_20.png">
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
