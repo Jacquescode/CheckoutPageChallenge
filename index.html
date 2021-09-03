@@ -10,12 +10,16 @@
       href="Images/devchallenges.png"
       type="image/x-icon"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Checkout Page Challenge</title>
   </head>
-
   <body>
     <div class="container">
       <header>
+        <div class="freeshipping">
+          <p>free shipping after $200!</p>
+        </div>
         <h2>Checkout</h2>
       </header>
       <section class="cart-items">
@@ -59,19 +63,23 @@
         </div>
       </section>
       <section class="informations">
-        <form>
+        <form onsubmit="alert('Thanks for you purchase!')">
           <div class="contact-info">
             <h3>contact information</h3>
             <div class="input">
               <label for="email-adress">e-mail</label>
-              <input type="email" required id="email-adress" placeholder="Enter your email..."/>
-
+              <span class="material-icons">
+                email
+                </span>
+              <input  type="email" required id="email-adress" placeholder="Enter your email..."/>
               <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="phone">phone</label>
+              <span class="material-icons">
+                call
+                </span>
               <input type="phone" required id="phone" placeholder="Enter your phone number..."/>
-
               <div class="input__indicator"></div>
             </div>
           </div>
@@ -79,25 +87,34 @@
             <h3>shipping address</h3>
             <div class="input">
               <label for="name">full name</label>
+              <span class="material-icons">
+                account_circle
+                </span>
               <input type="text" required id="name" placeholder="Enter your Name..." />
-
               <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="address">address</label>
+              <span class="material-icons">
+                home
+                </span>
               <input type="address" required id="address" placeholder="Your Address..." />
-
               <div class="input__indicator"></div>
             </div>
             <div class="input">
               <label for="city">city</label>
+              <span class="material-icons">
+                location_city
+                </span>
               <input type="city" required id="city" placeholder="Your City..."/>
-
               <div class="input__indicator"></div>
             </div>
             <div class="inputs">
               <div class="input">
                 <label for="country">country</label>
+                <span class="material-icons">
+                  public
+                  </span>                  
                 <select name="country" id="country">
                   <option value="" disabled selected>Your Country...</option>
                   <option value="canada">canada</option>
@@ -105,14 +122,15 @@
                   <option value="mexico">Mexico</option>
                   <option value="japon">Japon</option>
                 </select>
-
                 <div class="input__indicator"></div>
               </div>
               <div class="input">
                 <label for="postal code">postal code</label>
+                <span class="material-icons">
+                  markunread_mailbox
+                  </span>
                 <input type="postal code" required id="postal code" placeholder="Your Postal Code..."/>
                 <br />
-
                 <div class="input__indicator"></div>
               </div>
             </div>

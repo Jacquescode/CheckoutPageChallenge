@@ -37,19 +37,20 @@ btn4.addEventListener("click", function() {
 });
 
 const total = document.querySelector(".total");
-const shipping = document.querySelector(".shipping")
+const shipping = document.querySelector(".shipping");
 let price1 = 54.99;
 let price2 = 74.99;
-let shippingPrice = 19;
-let totalPrice = 0;
 
 function getTotal() {
+  let shippingPrice = 19;
+  let totalPrice = 0;
   let totalCart = count1*price1 + count2*price2;
 
   if (totalCart === 0) {
     shippingPrice = 0;
-    shipping.textContent = `$${shippingPrice}`;
-  } else if (totalCart < 200) {
+    shipping.textContent = "$0";
+  } else if (totalCart > 0 && totalCart < 200) {
+    shippingPrice = 19;
     totalPrice = totalCart + shippingPrice;
     shipping.textContent = `$${shippingPrice}`;
   } else {
