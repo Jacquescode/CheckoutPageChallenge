@@ -228,6 +228,7 @@ form button:hover {
 }
 
 footer {
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 1.4em;
   color: var(--clr-footer);
